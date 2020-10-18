@@ -49,7 +49,6 @@ public class LCA {
         if (root == null) { 
             return false; 
         } 
-          
         
         path.add(root.val); 		//will remove root if not in path 
   
@@ -73,7 +72,7 @@ public class LCA {
     
     public static void main(String[] args) 
     { 
-        LCA tree = new LCA(); 
+     /*   LCA tree = new LCA(); 
         tree.root = new Node(1); 
         tree.root.left = new Node(2); 
         tree.root.right = new Node(3); 
@@ -94,7 +93,7 @@ public class LCA {
         System.out.println("LCA(10, 15): " + tree.findLowestCommonAncestor(10,15)); 
         System.out.println("LCA(8, 11): " + tree.findLowestCommonAncestor(8,11)); 
         System.out.println("LCA(3, 8): " + tree.findLowestCommonAncestor(3,8)); 
-        System.out.println("LCA(12, 14): " + tree.findLowestCommonAncestor(12,14)); 
+        System.out.println("LCA(12, 14): " + tree.findLowestCommonAncestor(12,14)); */
       
     } 
 }
