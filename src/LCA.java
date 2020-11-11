@@ -76,24 +76,15 @@ public class LCA {
         tree.root = new Node(1); 
         tree.root.left = new Node(2); 
         tree.root.right = new Node(3); 
-        tree.root.left.left = new Node(4); 
-        tree.root.left.right = new Node(5); 
-        tree.root.right.left = new Node(6); 
-        tree.root.right.right = new Node(7); 
-        tree.root.left.left.right = new Node(8); 
-        tree.root.left.left.left = new Node(9); 
-        tree.root.left.right.right = new Node(10);
-        tree.root.left.right.left = new Node(11);
-        tree.root.right.left.right = new Node(12);
-        tree.root.right.left.left = new Node(13);
-        tree.root.right.right.right = new Node(14);
-        tree.root.right.right.left = new Node(15);
+        tree.root.right.left = new Node(4);
+        tree.root.left.right = tree.root.right.left;
+        tree.root.right.left.right = new Node(5);
         
   
-        System.out.println("LCA(10, 15): " + tree.findLowestCommonAncestor(10,15)); 
-        System.out.println("LCA(8, 11): " + tree.findLowestCommonAncestor(8,11)); 
-        System.out.println("LCA(3, 8): " + tree.findLowestCommonAncestor(3,8)); 
-        System.out.println("LCA(12, 14): " + tree.findLowestCommonAncestor(12,14)); 
+        System.out.println("LCA(4, 1): " + tree.findLowestCommonAncestor(10,15)); 
+        System.out.println("LCA(3, 2): " + tree.findLowestCommonAncestor(8,11)); 
+        System.out.println("LCA(3, 5): " + tree.findLowestCommonAncestor(3,8)); 
+        System.out.println("LCA(4, 3): " + tree.findLowestCommonAncestor(12,14)); 
       
     } 
 }
